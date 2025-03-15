@@ -2,31 +2,66 @@
   "alax228": {
     "name": "Alax",
     "login": "alax228",
-    "password": "1234"
+    "password": "1234",
+    "trainsData": []
   },
   "dai_manky": {
     "name": "Vosya",
     "login": "dai_manky",
-    "password": "ven1q2u@"
+    "password": "ven1q2u@",
+    "trainsData": []
   },
   "kaF": {
     "name": "Fak",
     "login": "kaF",
-    "password": "Bfweb12"
+    "password": "Bfweb12",
+    "trainsData": []
   },
   "a228": {
     "name": "Alax",
     "login": "alax228",
-    "password": "1234"
+    "password": "1234",
+    "trainsData": []
   },
   "gera15SM": {
     "name": "German",
     "login": "gera15SM",
-    "password": "veob@#!73"
+    "password": "veob@#!73",
+    "trainsData": []
   },
   "goosethecat": {
     "name": "Sergei",
     "login": "goosethecat",
-    "password": "GTC_007"
+    "password": "GTC_007",
+    "trainsData": [
+      {
+        "name": "РЖД",
+        "carriageCout": 12,
+        "tripName": "12р23"
+      }
+    ]
+  },
+  "f": {
+    "name": "f",
+    "login": "f",
+    "password": "f",
+    "trainsData": [
+      {
+        "name": "Train",
+        "carriageCout": 123,
+        "tripName": "37F"
+      },
+      {
+        "name": "DMD",
+        "carriageCout": 12,
+        "tripName": "32A"
+      }
+    ]
+  },
+  "test": {
+    "name": "Test",
+    "login": "test",
+    "password": "test",
+    "trainsData": []
   }
 }

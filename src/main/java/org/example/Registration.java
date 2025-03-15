@@ -18,6 +18,7 @@ public class Registration {
         Main.userData.put(login , new User(name, login, password));
 
         JSONParser.jsonWrite(Main.userData, Main.userDataPath);
+        Main.onlineUser = Main.userData.get(login);
         return true;
     }
 }

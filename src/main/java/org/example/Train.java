@@ -23,8 +23,12 @@ public class Train {
         this.tripName = newData;
     }
 
-    public void print(){
-        System.out.println(this.name+":\n\tКол-во вагонов: "+this.carriageCout+"\n\tНомер рейса: №"+this.tripName);
+    @Override
+    public String toString() {
+        return "{\n" +
+                "\tname: \"" + name + "\",\n" +
+                "\tcarriageCout: " + carriageCout + ",\n" +
+                "\ttripName: \"№" + tripName + "\"\n" +
+                '}';
     }
-
 }

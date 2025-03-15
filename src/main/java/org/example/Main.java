@@ -6,16 +6,17 @@ public class Main {
     static String userDataPath = "users.json";
     static Scanner scanner = new Scanner(System.in);
     static Map<String, User> userData = JSONParser.jsonRead(userDataPath);
+    static User onlineUser;
 
     public static void main(String[] args) {
         String choise = "-1";
 
 
-        if (!LogIn.LogIn(userData)){
+        if (!Menu.LogIn()){
             Menu.Exit();
         }
         while (!choise.equals("0")){
-            System.out.print("Меню:\n" +
+            System.out.print("\nМеню:\n" +
                     "1. Вывод данных\n" +
                     "2. Добавить объект\n" +
                     "3. Удалить объект\n" +
@@ -25,10 +26,24 @@ public class Main {
             choise = scanner.nextLine();
 
             switch (choise){
+                case "1":
+                    onlineUser.printTrainsData();
+                    break;
+                case "2":
+                    Menu.AddNewItem();
+                    break;
+                case "3":
+                    Menu.RemoveItem();
+                    break;
+                case "4":
+                    Menu.EditItem();
+                    break;
                 case "0":
                     Menu.Exit();
+                    break;
                 default:
                     System.out.println("Неизвестная команда!\n");
+                    break;
             }
         }
 
@@ -36,11 +51,7 @@ public class Main {
 
 
 
-//        userData.put("kaF", new User("Fak", "kaF", "Bfweb12"));
-//        userData.put("alax228", new User("Alax", "alax228", "1234"));
-//        userData.put("gera15SM", new User("German", "gera15SM", "veob@#!73"));
-//        userData.put("dai_manky", new User("Vosya", "dai_manky", "ven1q2u@"));
-//        JSONParser.jsonWrite(userData, "users.json");
+
         System.out.println("Hello, World!");
     }
 }
